@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position In CSS</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: thistle;
+        }
+        div[class*="box"]{
+            border: 3px dashed blue;
+            height: 500px;
+            font-size: 30px;
+            margin: 20px 0px;
+        }
+        .fixed{
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid lime;
+            position: fixed;
+            /* offset */
+            top: 0;  
+            right: 0;
+        }
+        .box-1{
+            background-color: grey;
+        }
+        .box-2{
+            background-color: khaki;
+        }
+        .box-3{
+            background-color: rgb(15, 202, 239);
+        }
+        .box-4{
+            background-color: blueviolet;
+        }
+        .box-5{
+            background-color: crimson;
+            /* overflow: scroll; */
+            position: relative;
+        }
+        .sticky{
+            background-color: crimson;
+            color: khaki;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        div[class*="box-ab"]{
+            width: 300px;
+            height: 300px;
+            border: 3px dotted white;
+            position: absolute;
+        }
+        .box-ab-1{
+            background-color: greenyellow;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        .box-ab-2{
+            background-color: grey;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        .box-ab-3{
+            background-color: orange;
+            top: 80px;
+            left: 80px;
+            z-index: 100;
+        }
+        .box-ab-4{
+            background-color: cyan;
+            top: 110px;
+            left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position In CSS</h1>
+    <hr>
+    <!-- position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky; -->
+
+    <hr>
+    <div class="box-1">Box-1
+        <div class="fixed">Fixed position</div>
+    </div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3
+        <div class="sticky">Sticky position</div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">
+        box-5
+        <div class="box-ab-1">Box-ab-1</div>
+        <div class="box-ab-2">Box-ab-2</div>
+        <div class="box-ab-3">Box-ab-3</div>
+        <div class="box-ab-4">Box-ab-4</div>
+    </div>
+</body>
+</html>
