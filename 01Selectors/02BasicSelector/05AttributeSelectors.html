@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        body{
+            background-color: thistle;
+        }
+        
+       
+       div[class*="box"]{
+        width: 200px;
+        margin: 10px auto;
+        height: 200px;    
+        border: 2px solid lime;
+        color: aliceblue;
+        font-size: 30px;
+       }
+       .box-1{
+        background-color: crimson;
+       }
+       .box-2{
+        background-color: teal;
+       }
+       .box-3{
+        background-color: orange;
+       }
+       .box-4{
+        background-color: blue;
+       }
+       .box-5{
+        background-color: yellow;
+        color: black !important;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Attribute Selector</h1>
+    <hr>
+    <div class="box-1">box-1</div>
+    <div class="box-2">box-2</div>
+    <div class="box-3">box-3</div>
+    <div class="box-4">box-4</div>
+    <div class="box-5">box-5</div>
+    
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <hr>
+   <ul>
+    <li><a href="#internal">Internal link</a></li>
+    <li><a href="http://example.com">Example link</a></li>
+    <li><a href="#InSensitive">Insensitive internal link</a></li>
+    <li><a href="http://example.org">Example org link</a></li>
+    <li><a href="https://example.org">Example https org link</a></li>
+  </ul>
+</body>
+</html>
+
+<style>
+    a {
+  color: blue;
+}
+
+/* Internal links, beginning with "#" */
+/* a[href^="#"] {
+  background-color: gold;
+} */
+
+/* Links with "example" anywhere in the URL */
+/* a[href*="example"] {
+  background-color: rgb(194, 31, 31);
+} */
+
+/* Links with "insensitive" anywhere in the URL,
+   regardless of capitalization */
+/* a[href*="insensitive" i] {
+  color: cyan;
+} */
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+/* a[href*="cAsE" s] {
+  color: pink;
+} */
+
+/* Links that end in ".org" */
+/* a[href$=".org"] {
+  color: red;
+} */
+
+/* Links that start with "https://" and end in ".org" */
+/* a[href^="https://"][href$=".org"]
+{
+  color: green;
+} */
+</style>
