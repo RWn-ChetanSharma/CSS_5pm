@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <!-- Internal CSS  -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* gap: 20px; */
+        }
+        img{
+            width: 100%;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .col-33{
+            width: 33.33%;
+        }
+        .col-25{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-50">
+                <h2>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in.</p>
+            </div>
+            <div class="col-50">
+                <img src="../Images/banner.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-33">
+                <h2>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in.</p>
+            </div>
+            <div class="col-33">
+                <img src="../Images/banner.jpg" alt="">
+            </div>
+            <div class="col-33">
+                <h2>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in.</p>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <h2>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in.</p>
+            </div>
+            <div class="col-25">
+                <img src="../Images/banner.jpg" alt="">
+            </div>
+            <div class="col-25">
+                <h2>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, in.</p>
+            </div>
+            <div class="col-25">
+                <img src="../Images/banner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
