@@ -84,5 +84,9 @@ button {
     padding: 10px 0px 20px 0px;
     margin-right: 0px;
   }
+  .img-round{
+    width: 450px;
+    height: 450px;
+  }
 
 }
