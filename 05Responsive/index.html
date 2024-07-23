@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 70%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .col-33{
+        width: 33.33%;
+      }
+      #section1 {
+        background-color: #f6eedf;
+        text-align: center;
+      }
+      .main-text {
+        width: 60%;
+        margin: auto;
+      }
+      h2 {
+        font-size: 64px;
+        color: #f64b3c;
+        font-weight: 700;
+        font-family: "Archivo";
+      }
+      h2 + p {
+        font-size: 25px;
+        color: #f64b3c;
+        font-weight: 400;
+        font-family: "Montserrat";
+        padding: 30px 0px;
+      }
+      h3 {
+        font-size: 33px;
+        text-transform: uppercase;
+        color: #f64b3c;
+        font-weight: 700;
+        font-family: "Archivo";
+        padding: 20px 0px;
+
+      }
+      h3 + p {
+        font-size: 25px;
+        color: #f64b3c;
+        font-weight: 600;
+        font-family: "Nunito";
+      }
+      .img-round{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border-radius: 50%;
+        background: url(../Images/card1.png)no-repeat center center/cover;
+      }
+      .section1-wrapper{
+        padding: 50px 0px;
+      }
+      .card{
+        margin-bottom: 50px;
+      }
+
+
+      /* Media Query  */
+
+      @media (max-width: 576px) {
+        body {
+          background-color: slategrey;
+        }
+        .row{
+            flex-direction: column;
+        }
+       .col-33, .main-text{
+        width: 100%;
+       }
+       
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section1">
+      <div class="section1-wrapper">
+        <div class="container">
+          <!-- main-text  -->
+          <div class="main-text">
+            <h2>Our Chef</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-<br>vamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+
+          <!-- row -->
+          <div class="row">
+            <!-- col-33  -->
+            <div class="col-33">
+              <div class="card">
+                <div class="img-round"></div>
+                <h3>Aiden Hunter</h3>
+                <p>Founder</p>
+              </div>
+            </div>
+            <!-- col-33  -->
+            <div class="col-33">
+              <div class="card">
+                <div class="img-round"></div>
+                <h3>Aiden Hunter</h3>
+                <p>Founder</p>
+              </div>
+            </div>
+            <!-- col-33  -->
+            <div class="col-33">
+              <div class="card">
+                <div class="img-round"></div>
+                <h3>Aiden Hunter</h3>
+                <p>Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
